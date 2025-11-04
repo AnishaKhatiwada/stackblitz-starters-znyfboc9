@@ -7,7 +7,6 @@ import { StatusListComponent } from './phaseI/status-list/status-list.component'
   selector: 'app-root',
   imports: [CommonModule, StatusListComponent],
   template: `
-    <h1>Hello from {{ name }}!</h1> 
     <status-list></status-list>
   `
 })

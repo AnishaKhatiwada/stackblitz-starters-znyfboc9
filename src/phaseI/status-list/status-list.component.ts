@@ -7,7 +7,10 @@ import { StatusColor } from '../../common-features/status/status';
     selector: 'status-list',
     standalone: true,
     imports: [CommonModule, StatusColor, StatusMappingPipe],
-    templateUrl: './status-list.component.html'
+    templateUrl: './status-list.component.html',
+    host: {
+        class: 'status-list'
+    }
 })
 export class StatusListComponent {
     // @Input() statusList: { key: string; value: string }[] = [];
