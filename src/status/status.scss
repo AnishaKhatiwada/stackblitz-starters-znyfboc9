@@ -1,0 +1,26 @@
+.status {
+  display: inline-flex;
+  // padding: 2px;
+  // @include font-get(text-xs, bold);
+  border-radius: 4px;
+  letter-spacing: 1px;
+  padding: 4px 6px;
+  align-items: center;
+  justify-content: center;
+  line-height: 12px;
+
+  &--success {
+    background-color: rgb(100, 172, 17);
+    color: rgb(30, 46, 12);
+  }
+
+  &--warning {
+    background-color: color-get(warn, 50);
+    color: color-get(warn, 900);
+  }
+
+  &--error {
+    background-color: color-get(error, 50);
+    color: color-get(error, 900);
+  }
+}
