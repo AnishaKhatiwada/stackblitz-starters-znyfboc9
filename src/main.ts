@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
-import { StatusListComponent } from './status-list/status-list.component';
+import { StatusListComponent } from './phaseI/status-list/status-list.component';
 
 @Component({
   selector: 'app-root',
