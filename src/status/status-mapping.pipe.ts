@@ -8,7 +8,8 @@ export enum ApiStatus {
     DONE = 'DONE',
     WARNING = 'WARNING',
     WARN = 'WARN',
-    PENDING = 'PENDING'
+    PENDING = 'PENDING',
+    ERROR = 'ERROR'
 }
 
 @Pipe({
@@ -24,6 +25,7 @@ export class StatusMappingPipe implements PipeTransform {
 
             case ApiStatus.FAIL:
             case ApiStatus.FAILURE:
+            case ApiStatus.ERROR:
                 return StatusValues.ERROR;
 
             case ApiStatus.WARNING:
