@@ -22,7 +22,7 @@ export class StatusColor {
     return this.status === StatusValues.SUCCESS;
   }
 
-  @HostBinding('class.status--warning')
+  @HostBinding('class.status--warn')
   get warning() {
     return this.status === StatusValues.WARNING;
   }

@@ -1,7 +1,5 @@
 .status {
   display: inline-flex;
-  // padding: 2px;
-  // @include font-get(text-xs, bold);
   border-radius: 4px;
   letter-spacing: 1px;
   padding: 4px 6px;
@@ -14,13 +12,13 @@
     color: rgb(30, 46, 12);
   }
 
-  &--warning {
-    background-color: color-get(warn, 50);
-    color: color-get(warn, 900);
+  &--warn {
+    background-color: rgb(221, 231, 42);
+    color: rgb(18, 19, 15);
   }
 
   &--error {
-    background-color: color-get(error, 50);
-    color: color-get(error, 900);
+    background-color: rgb(232, 86, 8);
+    color: rgb(28, 19, 12);
   }
 }
