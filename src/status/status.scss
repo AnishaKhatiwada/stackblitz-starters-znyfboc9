@@ -1,11 +1,11 @@
 .status {
   display: inline-flex;
-  border-radius: 4px;
-  letter-spacing: 1px;
-  padding: 4px 6px;
+  border-radius: 6px;
+  letter-spacing: 2px;
+  padding: 8px 8px;
   align-items: center;
   justify-content: center;
-  line-height: 12px;
+  line-height: 10px;
 
   &--success {
     background-color: rgb(100, 172, 17);

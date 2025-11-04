@@ -2,7 +2,7 @@ import { Directive, HostBinding, Input } from '@angular/core';
 
 export enum StatusValues {
   SUCCESS = 'success',
-  WARNING = 'warning',
+  WARN = 'warn',
   ERROR = 'error',
 }
 
@@ -10,12 +10,12 @@ export enum StatusValues {
   selector: 'status',
   standalone: true,
   host: {
-    class: 'status',
-  },
+    class: 'status'
+  }
 })
 export class StatusColor {
   @Input()
-  status: StatusValues | string = StatusValues.WARNING;
+  status: StatusValues | string = StatusValues.WARN;
 
   @HostBinding('class.status--success')
   get success() {
@@ -23,8 +23,8 @@ export class StatusColor {
   }
 
   @HostBinding('class.status--warn')
-  get warning() {
-    return this.status === StatusValues.WARNING;
+  get warn() {
+    return this.status === StatusValues.WARN;
   }
 
   @HostBinding('class.status--error')
