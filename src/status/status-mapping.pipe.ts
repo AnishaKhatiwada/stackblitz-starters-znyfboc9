@@ -34,7 +34,7 @@ export class StatusMappingPipe implements PipeTransform {
                 return StatusValues.WARN;
 
             default:
-                return StatusValues.WARN;
+                return StatusValues.DEFAULT;
         }
     }
 }

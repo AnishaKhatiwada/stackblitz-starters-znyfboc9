@@ -31,6 +31,10 @@ export class App {
       value: "warn"
     },
     {
+      key: "Not Verified",
+      value: "NOT_VERIFIED"
+    },
+    {
       key: "Canceled",
       value: "PENDING"
     }

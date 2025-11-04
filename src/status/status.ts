@@ -4,6 +4,7 @@ export enum StatusValues {
   SUCCESS = 'success',
   WARN = 'warn',
   ERROR = 'error',
+  DEFAULT = 'default'
 }
 
 @Directive({
@@ -15,7 +16,7 @@ export enum StatusValues {
 })
 export class StatusColor {
   @Input()
-  status: StatusValues | string = StatusValues.WARN;
+  status: StatusValues | string = StatusValues.DEFAULT;
 
   @HostBinding('class.status--success')
   get success() {
@@ -30,5 +31,10 @@ export class StatusColor {
   @HostBinding('class.status--error')
   get error() {
     return this.status === StatusValues.ERROR;
+  }
+
+  @HostBinding('class.status--default')
+  get default() {
+    return this.status === StatusValues.DEFAULT;
   }
 }
